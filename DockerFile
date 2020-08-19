@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8081
+ADD /target/myNotification-0.0.1-SNAPSHOT.jar myNotification-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["openjdk", "-jar",myNotification-0.0.1-SNAPSHOT.jar] 
